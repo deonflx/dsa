@@ -1,18 +1,7 @@
-class Solution:
+class Solution(object):
     def lengthOfLastWord(self, s):
-       
-        words = s.strip().split()
-        
+         last=s.strip().split()
+         print(len(last[-1]))
+         return len(last[-1])
 
-        if not words:
-            return 0
-            
-        
-        return len(words[-1])
-
-
-    
-        
-        test_str = "my name is deon"
-        result = solution.lengthOfLastWord(test_str)
         
